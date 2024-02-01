@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="project1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game-area", align="center">
+        <h1>🌙Welcome To Our Game!🌙</h1>
+        <h2>🪐Please Play Tic Tac Toe🪐</h2>
+        <h3>Instractions: This game is ment for two players. <br /> 
+            Each time one of the players needs to choose a square and click it, a picture will appear. <br />
+            Then it will be the other players turn to click another square, and a different appear on the screen. <br />
+            Your goal is to get three of your pictures in a row, column or a diagonal. </h3>
+        <h4>💫Enjoy Your Game💫</h4>
+
+        <input type="submit" value="Start Game" onclick="generateGame()">
+        <input type="submit" onclick="reset()" value="Restart score" onclick="reset()">
+        <input type="checkbox" name="computer" onclick="computer()" value="computer">
+        <label>Play with computer</label>
+        <div id="game-board" class="game-board"></div>
+        <div score>
+            <h4> X score is- <span id ="Xscore">0</span> </h4> 
+            <h4> O score is- <span id ="Oscore">0</span> </h4> 
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="project1.js"></script>
